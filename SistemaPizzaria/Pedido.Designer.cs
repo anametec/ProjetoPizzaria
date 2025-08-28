@@ -57,6 +57,7 @@
             this.btnNovo.TabIndex = 0;
             this.btnNovo.Text = "Novo";
             this.btnNovo.UseVisualStyleBackColor = true;
+            this.btnNovo.Click += new System.EventHandler(this.btnNovo_Click);
             // 
             // chkBorda
             // 
@@ -93,7 +94,6 @@
             this.lblValorPizza.Size = new System.Drawing.Size(95, 13);
             this.lblValorPizza.TabIndex = 4;
             this.lblValorPizza.Text = "VALOR DA PIZZA";
-            this.lblValorPizza.Click += new System.EventHandler(this.label1_Click);
             // 
             // grpOpcionais
             // 
@@ -107,7 +107,6 @@
             this.grpOpcionais.TabIndex = 5;
             this.grpOpcionais.TabStop = false;
             this.grpOpcionais.Text = "ESCOLHA OPCIONAIS";
-            this.grpOpcionais.Enter += new System.EventHandler(this.groupBox1_Enter);
             // 
             // chkTempero
             // 
@@ -225,6 +224,7 @@
             this.Controls.Add(this.btnNovo);
             this.Name = "Pedido";
             this.Text = "Pedido";
+            this.Load += new System.EventHandler(this.Pedido_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvPedido)).EndInit();
             this.grpOpcionais.ResumeLayout(false);
             this.grpOpcionais.PerformLayout();
